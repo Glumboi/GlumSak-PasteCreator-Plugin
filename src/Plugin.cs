@@ -9,7 +9,7 @@ namespace PasteCreatorPlugin
     {
         public static int exitCode;
 
-        public static int PluginEntryPoint(object[] args) //--> Default Entrypoint of the Plugin
+        public static int PluginEntryPoint(IntPtr mainWindowHandle, object[] args) //--> Default Entrypoint of the Plugin
         {
             if (args.Length > 0 &&
                 args[0] is bool &&
